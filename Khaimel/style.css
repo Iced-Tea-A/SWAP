@@ -1,0 +1,310 @@
+/* General Styles */
+:root {
+    --main-bg-color: #d1d1d1dc;
+    --table-border-color: #000000;
+    --primary-color: rgb(0, 6, 112);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--main-bg-color);
+    color: #000000;
+}
+
+a {
+    color: #64b5f6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    background-color: #d1d1d1dc;
+    padding: 1em;
+    text-align: center;
+}
+
+header a {
+    margin: 0 1em;
+    font-size: 1.2em;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--primary-color);
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav .dropdown {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav .dropdown button {
+    background-color: var(--primary-color);
+    border: none;
+    color: #ffffff;
+    padding: 0.7em 1em;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+nav .dropdown button:hover {
+    background-color: #04054c;
+}
+
+nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+}
+
+nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav .dropdown-content a {
+    display: block;
+    padding: 0.5em;
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+nav .dropdown-content a:hover {
+    background-color: #333;
+}
+
+/* Container */
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    background: #f1f0f0dc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    width: 30%;
+    border: 1px solid var(--table-border-color);
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #B22222;
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#table th, #table td {
+    border: 1px solid var(--table-border-color);
+    padding: 10px;
+    text-align: left;
+}
+
+#table th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.pagination {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: var(--primary-color);
+    border: 1px solid var(--table-border-color);
+    border-radius: 4px;
+}
+
+.pagination a.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.add-button {
+    text-align: right;
+}
+
+.add-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.add-button a:hover {
+    background-color: #B22222;
+}
+
+/* Back Button */
+.back-button {
+    background-color: #ff8a65;
+    border: none;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 1em;
+    left: 1em;
+}
+
+.back-button:hover {
+    background-color: #ff7043;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1em;
+    }
+
+    nav .dropdown button {
+        font-size: 0.9em;
+        padding: 0.5em 1em;
+    }
+
+    .back-button {
+        font-size: 0.9em;
+        padding: 0.5em 1em;
+    }
+}
+/* Center the form container */
+/* Adjust form container styling */
+.formbox {
+    width: 50%;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    margin-left: 400px;
+    margin-top: 50px;
+    background-color: #f1f0f0dc;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Align form labels and inputs */
+.formbox form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.formbox form label {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.formbox form input,
+.formbox form select {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formbox form button {
+    grid-column: 2 / 3;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top:20px
+}
+
+.formbox form button:hover {
+    background-color: #B22222;
+}
+
+.student-name {
+    text-align: center;
+    font-size: 1.2em; /* Optional, adjust size as needed */
+    font-weight: bold; /* Optional, for emphasis */
+    margin-bottom: 20px; /* Optional, spacing from other elements */
+}
+
+.alert {
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center
+}
+
+.success {
+    background-color: #4CAF50;
+    color: white;
+    padding-top: 10px;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+}
+
+.close-button {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.close-button a {
+    display: inline-block;
+    padding: 5px 18px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.close-button a:hover {
+    background-color: #B22222;
+}
