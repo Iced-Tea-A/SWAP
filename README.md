@@ -53,8 +53,9 @@ For empty classes, or courses with codes, there will be a
 This is only available to Admin.
 _________________________________________________________
 Forgot Password
-
+From Login Page, enter a valid student email account and click on "Forget Password?", an One-Time-Password will be sent to the email. Login with the One-Time-Password and you be redirected to an update password page to update your password before accessing your account.
 Update Password
 
 First-Time-Login
+From Login Page, enter a valid student email account that has not been logged in before
 _________________________________________________________
