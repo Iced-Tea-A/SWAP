@@ -1,8 +1,7 @@
-Accounts available in the SQL
-
-Admin -> admin@xyz.com      | P@ssw0rd!1
-Faculty -> johnwee@xyz.com  | P@ssw0rd!2
-Student -> meandyou@xyz.com | P@ssw0rd!3
+Accounts available in the SQL </br>
+Admin -> admin@xyz.com      | P@ssw0rd!1 </br>
+Faculty -> johnwee@xyz.com  | P@ssw0rd!2 </br>
+Student -> meandyou@xyz.com | P@ssw0rd!3 </br>
 _________________________________________________________
 Students CRUD
 
@@ -52,4 +51,10 @@ DELETE: Under Navigation Bar, hover to Classes and click Modify Class to view al
 For empty classes, or courses with codes, there will be a
 " Delete All Empty Classes " which essentially deletes all the class names that do not have any course codes or course names to them.
 This is only available to Admin.
+_________________________________________________________
+Forgot Password
+
+Update Password
+
+First-Time-Login
 _________________________________________________________
