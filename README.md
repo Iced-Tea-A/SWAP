@@ -64,5 +64,5 @@ Update Password
 Under navigation bar, hover to the Account and click on Update Password, Students will have to go take note of the password complexity requirements. After Password and Confirm password are typed and are the same, the Student will logged out and have to log in again
 
 First-Time-Login
-From Login Page, enter a valid student email account that has not been logged in before, and an One-Time-Password will be sent to the email. Login with the One-Time-Passwordn and you will be redirected to an update password page to update your password before accessing your account. Students will need to login again with the updated password.
+From Login Page, enter a valid student email account that has not been logged in before, and an One-Time-Password will be sent to the email. Login with the One-Time-Password and you will be redirected to an update password page to update your password before accessing your account. Students will need to login again with the updated password.
 _________________________________________________________
